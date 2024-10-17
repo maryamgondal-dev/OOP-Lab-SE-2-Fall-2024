@@ -1,0 +1,98 @@
+**************** Task 1************************
+package team;
+
+public class players {
+    String name= "Maryam";
+    int position=2;
+    players(String playersname,int position){
+        this.name=name;
+        this.position=position;
+    }
+    void display(){
+        System.out.println("players:" + name);
+        System.out.println("players:"+ position);
+    }
+}
+class team{
+    String teamname="Maryam";
+    int position=2;
+    players players;
+    team(String teammate,int position,players players){
+        this.teamname=teamname;
+        this.position=position;
+        this.players=players;
+        
+    }
+    void displaydetails(){
+            System.out.println("team"+teamname);
+            System.out.println("teamname:"+position);
+            players.display();
+    }    
+}
+********************************** Task 2 ***************************
+package computer;
+
+
+public class cpuu {
+class cpuu {
+    private String brand;
+    private String model;
+
+    public cpuu(String brand, String model) {
+        this.brand = brand;
+        this.model = model;
+    }
+
+    public String getDetails() {
+        return "cpuu Brand: " + brand + ", Model: " + model;
+    }
+}  
+  class RAM {
+    private String brand;
+    private int capacity; 
+
+    public RAM(String brand, int capacity) {
+        this.brand = brand;
+        this.capacity = capacity;
+    }
+    public String getDetails() {
+        return "RAM Brand: " + brand + ", Capacity: " + capacity + "GB";
+    }
+}  
+ class HardDrive {
+    private String brand;
+    private int capacity;
+
+    public HardDrive(String brand, int capacity) {
+        this.brand = brand;
+        this.capacity = capacity;
+    }
+    public String getDetails() {
+        return "HardDrive Brand: " + brand + ", Capacity: " + capacity + "GB";
+    }
+}
+ class Computer {
+    private cpuu cpuu;
+    private RAM ram;
+    private HardDrive hardDrive;
+
+    public Computer(String cpuBrand, String cpuuModel, String ramBrand, int ramCapacity, String hddBrand, int hddCapacity) {
+        this.cpuu = new cpuu(cpuBrand, cpuuModel);
+        this.ram = new RAM(ramBrand, ramCapacity);
+        this.hardDrive = new HardDrive(hddBrand, hddCapacity);
+    }
+
+    public void displayDetails() {
+        System.out.println(cpuu.getDetails());
+        System.out.println(ram.getDetails());
+        System.out.println(hardDrive.getDetails());
+    }
+} 
+ public class Main {
+      public static void main(String[] args) {
+        Computer computer = new Computer("Intel", "Core i7", "Corsair", 16, "Seagate", 1024);
+         System.out.println("Computer Details:");
+        computer.displayDetails();
+        computer = null;
+    
+}
