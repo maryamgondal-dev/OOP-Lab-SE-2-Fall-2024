@@ -1,0 +1,65 @@
+******************* Task 1 **************************
+Task 2 
+
+SOLUTION:-
+package laptop;
+
+/**
+ *
+ * @author City laptops
+ */
+import java.util.Scanner;
+public class Laptop {
+String brand;
+public Laptop(String brand){
+this.brand=brand;
+}
+public void displaybrand
+        (){
+    System.out.println("Laptop brand:"+ brand);
+}
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args){ 
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter laptop brand");
+    String brand=scanner.nextLine();
+    Laptop laptop= new Laptop(brand);
+    laptop.displaybrand();
+    
+        // TODO code application logic here
+    }
+   
+}
+********************* Task 2 ****************************
+package abc;
+
+/**
+ *
+ * @author City laptops
+ */
+public class ABC {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        for(int r=1;r<=5;r++){
+        for(int c=1;c<=5;c++){
+            if(c==1 || r==3 || c==5 ){
+                System.out.print("*");
+            }
+            else
+                System.out.print(" ");
+                
+        
+        }
+        System.out.println();
+                }
+          
+    
+        // TODO code application logic here
+    }
+}
+
