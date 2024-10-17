@@ -1,0 +1,101 @@
+**************************** Task 1 ***************************************
+SOLUTION:
+package student;
+
+/**
+ *
+ * @author City laptops
+ */
+public class Student {
+   String name = "MARYAM GONDAL";
+String city = "ISLAMABAD";
+int age = 20; 
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+      Student s1= new Student();
+      System.out.println(s1.name);
+      System.out.println(s1.city);
+      System.out.println(s1.age);
+    }
+    
+}
+************************ Task 2 **********************************
+Solution:
+package area;
+
+/**
+ *
+ * @author City laptops
+ */
+public class Area {
+int length=12;
+int width=15;
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       Area a1 = new Area(); 
+               System.out.println(a1.length*a1.width);
+        
+        
+        // TODO code application logic here
+    }
+    
+}
+************************ Task 3 ***************************
+package computer;
+
+/**
+ *
+ * @author City laptops
+ */
+public class Computer {
+String name=" The company name is Apple";
+String config = " The configuration is i5";
+String cos = "Its cost is 50000";
+String os = "Its operating System is IOS ";
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Computer com2 = new Computer();
+        System.out.println(com2.name);
+        System.out.println(com2.config);
+        System.out.println(com2.cos);
+        System.out.println(com2.os);
+        // TODO code application logic here
+    }
+***************** Task 4 *****************************************
+package maximum;
+
+/**
+ *
+ * @author City laptops
+ */
+public class Maximum {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        Maximum m1 = new Maximum();
+        int num1=20;
+        int num2=30;
+        int num3=40;
+        if(num1> num2 && num1>num3)
+        {
+            System.out.println("The greatest number is:"+num1);}
+        else if (num2>num1&& num2>num3){
+            System.out.println("The greatest number is:" +num2);}
+        else{
+            System.out.println("The greatest number is:"+num3);}
+        }
+        // TODO code application logic here
+   
+    
+
