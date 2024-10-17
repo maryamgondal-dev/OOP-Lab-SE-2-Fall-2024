@@ -1,0 +1,87 @@
+******************************* Task 1 *****************************************
+Solution:
+#include<iostream>
+using namespace std;
+class Employee {
+	public:
+		string name;
+		string jobTitle;
+		double salary;
+		void displayinfo();
+};
+int main()
+{
+Employee e;
+e.name="Maryam Gondal";
+e.jobTitle="Software Engineer";
+e.salary=50000;
+cout<<"Name:"<<e.name<<endl;
+cout<<"Job Title:"<<e.jobTitle<<endl;
+cout<<"Salary:"<<e.salary<<endl;
+e.displayinfo();
+return 0;
+}
+*************************** Task 2 **********************************************
+Solution:
+#include<iostream>
+using namespace std;
+class car{
+	public:
+		string name;
+		string topSpeed;
+		int modelName;
+		void displayinfo();
+};
+int main()
+{
+car c;
+c.name="BMW";
+c.topSpeed=160;
+c.modelName=2024;
+cout<<"Name:"<<c.name<<endl;
+cout<<"Top speed:"<<c.topSpeed<<endl;
+cout<<"Model name:"<<c.modelName<<endl;
+c.displayinfo();
+return 0;
+}
+********************* Task 3 ****************************************************
+Solution:
+#include<iostream>
+using namespace std;
+class laptop{
+	public:
+		string brand;
+		int model;
+		string serial;
+		string color;
+		int price;
+		string processorSpeed;
+		string ram;
+		int screensize;
+		void displayinfo();
+};
+int main()
+{
+laptop l2[2];
+l2[0].brand="dell";
+l2[0].model=2019;
+l2[0].serial="NSFBJXC/h";
+l2[0].color="silver";
+l2[0].price=70000;
+l2[0].processorSpeed="350mph";
+l2[0].ram="8GB";
+l2[0].screensize=15;
+
+ l2[1].brand="hp";
+l2[1].model=2017;
+l2[1].serial="NSFCJC/h";
+l2[1].color="black";
+l2[1].price=60000;
+l2[1].processorSpeed="300mph";
+l2[1].ram="7GB";
+l2[1].screensize=13;
+for(int i=0;i<2;i++)
+laptop[i].display info();
+return 0;
+}
+
