@@ -1,0 +1,82 @@
+********************** Task 1 *********************
+package movi;
+public class Movi {
+private String title;
+    private String director;
+    private int releaseYear;
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+    public String getDirector() {
+        return director;
+    }
+
+    public void setDirector(String director) {
+        this.director = director;
+    }
+    public int getReleaseYear() {
+        return releaseYear;
+    }
+
+    public void setReleaseYear(int releaseYear) {
+        this.releaseYear = releaseYear;
+    }
+
+    public static void main(String[] args) {
+        Movi movi = new Movi();
+        movi.setTitle("Inception");
+        movi.setDirector("Christopher Nolan");
+        movi.setReleaseYear(2010);
+        System.out.println("Movi Title: " + movi.getTitle());
+        System.out.println("Director: " + movi.getDirector());
+        System.out.println("Release Year: " + movi.getReleaseYear());
+    }
+}        
+  
+************************* Task 2 *************************
+package appliance;
+public class Appliance {
+    private String brand;
+    private String model;
+    private int powerConsumption;
+    public Appliance(String brand, String model, int powerConsumption) {
+        this.brand = brand;
+        this.model = model;
+        this.powerConsumption = powerConsumption;
+    }
+    public String getBrand() {
+        return brand;
+    }
+    public String getModel() {
+        return model;
+    }
+    public int getPowerConsumption() {
+        return powerConsumption;
+    }
+}
+package appliance;
+public class Refrigerator extends Appliance {
+    private int capacity;
+   
+    public Refrigerator(String brand, String model, int powerConsumption, int capacity) {
+        super(brand,model,powerConsumption);
+        this.capacity = capacity;
+       
+    }
+    public int getCapacity() {
+        return capacity;
+    }
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+    public static void main(String[] args) {    
+        Refrigerator myFridge = new Refrigerator("Samsung", "RF28R7351SG", 800, 700);
+        System.out.println("Model: " + myFridge.getModel());
+        System.out.println("Power Consumption: " + myFridge.getPowerConsumption() + " watts");
+        System.out.println("Capacity: " + myFridge.getCapacity() + " liters");
+    }
+}
